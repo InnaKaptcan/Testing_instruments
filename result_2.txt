@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.3, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/innakaptcan/PycharmProjects/AAA_python_tests
+plugins: cov-3.0.0
+collected 3 items
+
+test_issue_2.py ...                                                      [100%]
+
+============================== 3 passed in 0.02s ===============================

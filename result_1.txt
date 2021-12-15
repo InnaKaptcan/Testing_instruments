@@ -1,0 +1,38 @@
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('LOOOOOOOOOONG STR')
+Expecting:
+    '.-.. --- --- --- --- --- --- --- --- --- --- -. --.
+    ... -  .-.'
+ok
+Trying:
+    encode('HELLO. MY NAME IS INNA') # doctest: +ELLIPSIS
+Expecting:
+    '.... . .-.. .-..'...'-. .-'
+**********************************************************************
+File "/Users/innakaptcan/PycharmProjects/AAA_python_tests/Issue_1.py", line 29, in Issue_1.encode
+Failed example:
+    encode('HELLO. MY NAME IS INNA') # doctest: +ELLIPSIS
+Expected:
+    '.... . .-.. .-..'...'-. .-'
+Got:
+    '.... . .-.. .-.. --- .-.-.-   -- -.--   -. .- -- .   .. ...   .. -. -. .-'
+Trying:
+    encode('*')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: '*'
+ok
+1 items had no tests:
+    Issue_1
+**********************************************************************
+1 items had failures:
+   1 of   4 in Issue_1.encode
+4 tests in 2 items.
+3 passed and 1 failed.
+***Test Failed*** 1 failures.
